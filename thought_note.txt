@@ -1,0 +1,7 @@
+While creating this app i take help of "Bootstrap" , Fontawesome icons , npm and its packages. I import fontawesome libraries from npm 
+and link Bootstrap css framework use it in the project . I created component folder where i created all my react functional based components 
+and export them to use, their css style files . 
+Please import these packages before running my app to work it properly--
+"npm i --save @fortawesome/fontawesome-svg-core",
+"npm install --save @fortawesome/free-solid-svg-icons", 
+"npm install --save @fortawesome/react-fontawesome"

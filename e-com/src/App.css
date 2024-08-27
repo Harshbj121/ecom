@@ -1,0 +1,219 @@
+/* Ensure the html and body take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Main container to use Flexbox for layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Content area should grow to take available space */
+.content {
+  flex: 1;
+}
+/* header-2 */
+a{
+  text-decoration: none;
+  color: black;
+}
+.header2-nav {
+  background-color: rgb(220, 216, 216);
+  display: flex;
+  justify-content: center;
+  min-width: fit-content;
+}
+
+.header2-ul {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  font-size: 1rem;
+}
+
+.header2-a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+}
+
+.header2-a:hover {
+  color: black;
+  background-color: azure;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+/* footer css */
+
+.footer-parent {
+  color: white;
+  background-color: black;
+}
+
+.footer-child {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-ol {
+  list-style: none;
+  text-align: center;
+}
+
+.footer-a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width:740px) {
+  .footer-child {
+      grid-template-columns: auto;
+  }
+}
+
+/* Header-1 */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header1 {
+  padding: 1rem 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: black;
+}
+
+.header1 img {
+  text-align: center;
+  width: 20vw;
+  height: 2rem;
+  border-radius: 10px;
+}
+
+.header1-logo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header1 #icon {
+  padding: 0.2rem 0.6rem;
+  color: white;
+  font-size: large;
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+
+.fa-bars {
+  font-size: 25px;
+}
+
+.header1 #icon:hover {
+  border: 2px solid white;
+  border-radius: 5px;
+  height: fit-content;
+}
+
+
+
+.item-login {
+  display: inline-block;
+  padding: 0.3rem;
+  font-size: 15px;
+  color: black;
+  background-color: yellow;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+}
+
+.item-login:hover {
+  background-color: rgb(166, 166, 4);
+  text-decoration: none;
+  color: black;
+}
+
+#i-login {
+  font-size: 25px;
+}
+
+.fa-cart-shopping {
+  margin-left: 1rem;
+  color: yellow;
+  border: none
+}
+
+@media (max-width:576px) {
+  .header1 img {
+      width: 40vw;
+  }
+
+  #search,
+  #search1 {
+      display: none;
+  }
+
+  .item-search {
+      width: max-content;
+  }
+
+  .fa-cart-shopping {
+      margin-left: auto;
+  }
+
+  #search1 {
+      flex-direction: column;
+      width: fit-content;
+      gap: 1rem;
+  }
+
+  .header1 #icon {
+      display: inline-block;
+  }
+
+  .logo {
+      text-align: left;
+  }
+
+  .header1-logo {
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+  .header1 {
+      align-items: normal;
+      padding: 1rem;
+  }
+
+}
+
+@media (min-width:576px) {
+
+  #search,
+  #search1 {
+      display: flex !important;
+  }
+}
